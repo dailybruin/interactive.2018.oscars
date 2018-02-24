@@ -1,17 +1,20 @@
-section {
-  h2 {
-    font-family: 'Josefin Sans';
-    background: linear-gradient(rgba(0, 0, 0, 0) 60%, #ffe866 40%);
-    display: inline-block;
-    // margin: 0;
-    // padding: 0;
-    width: auto;
-    height: 1.4rem;
-  }
+section h2 {
+  font-family: 'Josefin Sans';
+  background: linear-gradient(rgba(0, 0, 0, 0) 60%, #ffe866 40%);
+  display: inline-block;
+  // margin: 0;
+  // padding: 0;
+  width: auto;
+  height: 1.4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .article-card {
-  width: 400px;
+  // width: 400px;
 
   h3 {
     font-family: 'Josefin Sans';
