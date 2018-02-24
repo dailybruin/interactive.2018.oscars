@@ -1,22 +1,31 @@
-<footer>
-  <div class="footer_placeholder"></div>
 
-  <div class="footer__text">
-    <div>Copyright © The Daily Bruin 2018</div>
-    <div>
-      Built with Suzy’s ❤️ in Kerckhoff 118 by
-      {% for developer in developers %}
-        {{ developer.name }},
-        {# {{ "," if loop.revindex != 1 else "and" }} #}
-      {% endfor %}
-    </div>
-    <div>
-      Questions, comments or corrections? Email <a href="mailto:online@dailybruin.com">online@dailybruin.com</a>.
+<footer>
+  <div class="empty"></div>
+
+  <div class="footer_container">
+    <div class="empty_3"></div>
+    <div class="footer__text">
+      <div>Copyright © The Daily Bruin 2018</div>
+      <div>
+        Built with Suzy’s ❤️ in Kerckhoff 118 by
+        {% for developer in developers %}
+          {{ developer.name }},
+          {# {{ "," if loop.revindex != 1 else "and" }} #}
+        {% endfor %}
+      </div>
+      <div>
+        Questions, comments or corrections? Email <a href="mailto:online@dailybruin.com">online@dailybruin.com</a>.
+      </div>
     </div>
   </div>
 
-  <div class="footer__db-logo">
-    <img src="./img/db-logo.png" alt="Daily Bruin Logo">
+  <div class="logo_container">
+    <div class="empty_2"></div>
+    <div class="footer__db-logo">
+      <img src="./img/db-logo.png" alt="Daily Bruin Logo">
+    </div>
   </div>
 
 </footer>
+
+
