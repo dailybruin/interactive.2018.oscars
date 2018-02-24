@@ -1,13 +1,21 @@
+// .footer_container {
+//     display: flex;
+// }
 footer {
-  background-color: #333;
-  color: #fff;
-
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  justify-items: center;
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__db-logo {
-  height: 3rem;
-  margin-left: auto;
+    height: 3rem;
+    // margin-left: auto;
+}
+
+.footer__text {
+    // align-self: center;
+    text-align: center;
 }
