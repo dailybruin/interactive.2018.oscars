@@ -4,11 +4,42 @@ base_url: http://localhost:3000
 
 
 [features]
+  headline: Article Goes Here
+  image: http://via.placeholder.com/400x250
+  subhead: Subheading thing
+  [.authors]
+  * Nathan Smith
+  []
+[]
+
+[secondtakes]
+headline: Article Goes Here
+subhead: Subheading thing
+[.authors]
+* Nathan Smith
+[]
 
 headline: Article Goes Here
-author: Nathan Smith
+subhead: Subheading thing
+[.authors]
+Nathan Smith
+[]
 
-name: Tessa
-age: 30
+headline: Article Goes Here
+subhead: Subheading thing
+[.authors]
+Nathan Smith
+[]
 
+headline: Article Goes Here
+subhead: Subheading thing
+[.authors]
+Nathan Smith
+[]
+
+headline: Article Goes Here
+subhead: Subheading thing
+[.authors]
+Nathan Smith
+[]
 []
