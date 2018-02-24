@@ -11,10 +11,17 @@ footer {
     img {
         height: 3rem;
     }
-    // margin-left: auto;
 }
 
 .footer__text {
-    // align-self: center;
     text-align: center;
+}
+
+.logo_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.empty_2 {
+    height: 0.25rem;
 }
