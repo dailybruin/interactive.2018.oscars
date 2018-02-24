@@ -13,6 +13,9 @@ import autoprefixer from 'autoprefixer';
 import minifyCSS from 'gulp-csso';
 import sourcemaps from 'gulp-sourcemaps';
 
+// JavaScript
+import webpack from 'webpack-stream';
+
 // Browsersync
 import bs from 'browser-sync';
 const browserSync = bs.create();
@@ -32,6 +35,20 @@ gulp.task('styles', () =>
     .pipe(browserSync.stream())
 );
 
+gulp.task('scripts', () => {
+  gulp
+    .src('./src/index.js')
+    .pipe(
+      webpack({
+        devtool: 'source-map',
+        output: {
+          filename: 'index.js',
+        },
+      })
+    )
+    .pipe(gulp.dest('dev/'));
+});
+
 gulp.task('html', () =>
   gulp
     .src('src/*.{njk,html}')
@@ -47,7 +64,7 @@ gulp.task('images', () => {
   gulp.src('src/images/*').pipe(gulp.dest('dev/img'));
 });
 
-gulp.task('development', ['html', 'styles', 'images'], () => {
+gulp.task('development', ['html', 'styles', 'scripts', 'images'], () => {
   browserSync.init({
     server: {
       baseDir: './dev',
@@ -59,6 +76,7 @@ gulp.task('development', ['html', 'styles', 'images'], () => {
 
   gulp.watch('src/**/*.{njk,html}', ['html']).on('change', browserSync.reload);
   gulp.watch('src/**/*.scss', ['styles']);
+  gulp.watch('src/**/*.js', ['scripts']);
 });
 
 gulp.task('clean', () => del(['dev/', 'prod/']));
