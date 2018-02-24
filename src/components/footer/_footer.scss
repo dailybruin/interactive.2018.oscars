@@ -1,0 +1,13 @@
+footer {
+  background-color: #333;
+  color: #fff;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-items: center;
+}
+
+.footer__db-logo {
+  height: 3rem;
+  margin-left: auto;
+}
