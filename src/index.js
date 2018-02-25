@@ -40,7 +40,11 @@ var eight_colors = ["#ffdd40", "#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45
 
 var five_colors = ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"];
 
-document.getElementById("mySelect").addEventListener("change", changeChart);
+var el = document.getElementById('mySelect');
+
+if (el) {
+    el.addEventListener("change", changeChart);
+}
 
 var chart_colors = 0;
 var chart_data = 0;
