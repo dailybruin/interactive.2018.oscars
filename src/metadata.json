@@ -1,0 +1,45 @@
+{
+  "sections": [
+    {
+      "title": "Features",
+      "id": "features",
+      "articles": [
+        {
+          "headline": "Article Goes Here",
+          "image": "http://via.placeholder.com/400x250",
+          "image_alt": "A description of the image",
+          "subhead": "Subheading thing",
+          "link": "#",
+          "authors": ["Nathan Smith"]
+        },
+        {
+          "headline": "Article Goes Here",
+          "image": "http://via.placeholder.com/400x250",
+          "image_alt": "A description of the image",
+          "subhead": "Subheading thing",
+          "link": "#",
+          "authors": ["Nathan Smith"]
+        },
+        {
+          "headline": "Article Goes Here",
+          "image": "http://via.placeholder.com/400x250",
+          "image_alt": "A description of the image",
+          "subhead": "Subheading thing",
+          "link": "#",
+          "authors": ["Nathan Smith"]
+        }
+      ]
+    },
+    {
+      "title": "Second Takes",
+      "articles": [
+        {
+          "headline": "Article Goes Here",
+          "image": "http://via.placeholder.com/400x250",
+          "subhead": "Subheading thing",
+          "authors": ["Nathan Smith"]
+        }
+      ]
+    }
+  ]
+}

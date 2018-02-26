@@ -1,7 +1,11 @@
 import gulp from 'gulp';
 
+import fs from 'fs';
+import path from 'path';
+
 // HTML
 import nunjucksRender from 'gulp-nunjucks-render';
+import data from 'gulp-data';
 
 // HTML
 // import htmlmin from 'gulp-htmlmin';
@@ -52,6 +56,11 @@ gulp.task('scripts', () => {
 gulp.task('html', () =>
   gulp
     .src('src/*.{njk,html}')
+    .pipe(
+      data(file => {
+        return JSON.parse(fs.readFileSync('./src/metadata.json'));
+      })
+    )
     .pipe(
       nunjucksRender({
         path: ['src/'],

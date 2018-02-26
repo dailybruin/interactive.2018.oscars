@@ -1,37 +1,37 @@
 footer {
-    background-color: #333;
-    color: #fff;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    display: flex;
-    justify-content: space-between;
-    font-size: 11px;
+  background-color: #333;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
 }
 
 .footer__db-logo {
-    img {
-        height: 3rem;
-    }
+  img {
+    height: 3rem;
+  }
 }
 
 .footer__text {
-    text-align: center;
+  text-align: center;
 }
 
 .logo_container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer_container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .empty_2 {
-    height: 0.25rem;
+  height: 0.25rem;
 }
 
 .empty_3 {
-    height: 0.55rem;
+  height: 0.55rem;
 }
