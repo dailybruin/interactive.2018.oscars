@@ -1,1 +1,1 @@
-// $('header').height($(window).height());
+$('.cover-photo').height($(window).height());

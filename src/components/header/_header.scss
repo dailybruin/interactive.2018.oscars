@@ -1,18 +1,26 @@
-// header {
-//   background-image: url(../img/background.svg);
-//   background-repeat: no-repeat;
-//   background-size: auto 100%;
-//   background-position: 50% 0;
+.cover-photo {
+  background-color: gold;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 50% 0;
 
-//   font-family: 'Karla', sans-serif;
+  font-family: 'Karla', sans-serif;
 
-//   h1 {
-//     font-family: 'Josefin Sans', sans-serif;
-//     text-transform: uppercase;
-//   }
+  display: grid;
+  justify-items: center;
+  align-items: center;
 
-//   a {
-//     text-decoration: none;
-//     color: inherit;
-//   }
-// }
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+nav a {
+  display: block;
+}
