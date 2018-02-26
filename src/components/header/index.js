@@ -1,1 +1,1 @@
-$('header').height($(window).height());
+// $('header').height($(window).height());

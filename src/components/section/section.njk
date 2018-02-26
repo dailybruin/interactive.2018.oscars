@@ -1,16 +1,18 @@
 {% for section in sections %}
   <section id="{{ section.id }}">
     <h2>{{ section.title }}</h2>
-    <div class="grid">
+    <div class="card-container">
       {% for article in section.articles %}
-        <div class="article-card">
+        <article class="card">
           <a href="{{ article.link }}">
-            <img src="{{ article.image }}" alt="{{ article.image_alt }}">
-            <h3>{{ article.headline }}</h3>
+            <figure>
+              <img class="card__thumbnail" src="http://placekitten.com/700/287" alt="{{ article.image_alt }}">
+            </figure>
+            <h3 class="card__title">{{ article.headline }}</h3>
             <span>{{ article.authors }}</span>
             <p>{{ article.subhead }}</p>
           </a>
-        </div>
+        </article>
       {% endfor %}
     </div>
   </section>
