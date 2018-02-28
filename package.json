@@ -13,6 +13,17 @@
     "extends": "airbnb-base",
     "env": { "browser": true }
   },
+  "prettier": {
+    "overrides": [
+      {
+        "files": "*.js",
+        "options": {
+          "singleQuote": true,
+          "trailingComma": "es5"
+        }
+      }
+    ]
+  },
   "dependencies": {
     "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
