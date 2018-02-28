@@ -1,0 +1,24 @@
+.card {
+  figure,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.card__title {
+  font-family: Lora;
+  font-weight: bold;
+}
+
+.card__text {
+  margin: 0.8rem 1rem;
+}
+
+.card__byline {
+  font-size: 0.8rem;
+}
+
+.card__byline__author {
+  text-transform: uppercase;
+}

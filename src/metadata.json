@@ -28,7 +28,7 @@
           "image_alt": "A description of the image",
           "subhead": "Subheading thing",
           "link": "#",
-          "authors": ["Nathan Smith"]
+          "authors": ["Nathan Smith", "Mike Zhang"]
         }
       ]
     },
@@ -39,7 +39,7 @@
           "headline": "Article Goes Here",
           "image": "http://via.placeholder.com/400x250",
           "subhead": "Subheading thing",
-          "authors": ["Nathan Smith"]
+          "authors": ["Nathan Smith", "Mike Zhang", "Hongyi Zhang"]
         }
       ]
     }
