@@ -1,10 +1,14 @@
-header {
-  background-image: url(../img/background.svg);
+.cover-photo {
+  background-color: gold;
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: 50% 0;
 
   font-family: 'Karla', sans-serif;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
 
   h1 {
     font-family: 'Josefin Sans', sans-serif;
@@ -15,4 +19,8 @@ header {
     text-decoration: none;
     color: inherit;
   }
+}
+
+nav a {
+  display: block;
 }

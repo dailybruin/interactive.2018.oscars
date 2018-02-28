@@ -83,7 +83,9 @@ gulp.task('development', ['html', 'styles', 'scripts', 'images'], () => {
     },
   });
 
-  gulp.watch('src/**/*.{njk,html}', ['html']).on('change', browserSync.reload);
+  gulp
+    .watch('src/**/*.{njk,html,json}', ['html'])
+    .on('change', browserSync.reload);
   gulp.watch('src/**/*.scss', ['styles']);
   gulp.watch('src/**/*.js', ['scripts']);
 });
