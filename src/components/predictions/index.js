@@ -37,22 +37,28 @@ function createNewDoughnutChart(category) {
         display: true,
         text: category.title,
       },
+      tooltips: {
+        callbacks: {
+          label(tooltipItem, data) {
+            const label = data.labels[tooltipItem.index];
+
+            // get the concerned dataset
+            const dataset = data.datasets[tooltipItem.datasetIndex];
+            // calculate the total of this data set
+            const total = dataset.data.reduce((previousValue, currentValue, currentIndex, array) =>
+                previousValue + currentValue,);
+            // get the current items value
+            const currentValue = dataset.data[tooltipItem.index];
+            // calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
+            const percentage = Math.floor(currentValue / total * 100 + 0.5);
+
+            return `${label}: ${percentage}%`;
+          },
+        },
+      },
     },
-    // tooltips: {
-    //   callbacks: {
-    //     label: (tooltipItem, data) => {
-    //       const dataset = data.datasets[tooltipItem.datasetIndex];
-    //       const total = dataset.data.reduce((previousValue, currentValue) => previousValue + currentValue,);
-    //       const currentValue = dataset.data[tooltipItem.index];
-    //       const precentage = Math.floor(currentValue / total * 100 + 0.5);
-    //       return `${precentage}%`;
-    //     },
-    //   },
-    // },
   });
 }
-
-console.log(data);
 
 let doughnutChart = createNewDoughnutChart(data.bestPicture);
 const select = document.getElementById('mySelect');
@@ -60,7 +66,6 @@ const select = document.getElementById('mySelect');
 function changeChart() {
   let category = data.bestPicture;
 
-  console.log(document.getElementById('mySelect').value);
   switch (Number(document.getElementById('mySelect').value)) {
     case 1:
       break;
