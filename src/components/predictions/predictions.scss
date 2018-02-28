@@ -1,0 +1,18 @@
+.prediction_container {
+  display: flex;
+  justify-content: space-between;
+  height: 30rem;
+}
+
+.prediction_text {
+  width: 33%;
+}
+
+.empty {
+  width: 5%;
+}
+
+.visualization {
+  width: auto;
+}
+
