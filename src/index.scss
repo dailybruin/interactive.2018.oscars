@@ -1,25 +1,24 @@
-@import 'components/footer/_footer';
-@import 'components/header/_header';
-@import 'components/section/_section';
-@import 'components/predictions/_predictions';
+@import "components/footer/_footer";
+@import "components/header/_header";
+@import "components/section/_section";
+@import "components/predictions/_predictions";
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   margin: 0;
   padding: 0;
 }
 
 * {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
-

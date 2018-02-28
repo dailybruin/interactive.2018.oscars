@@ -1,5 +1,7 @@
+@import "./card/_card";
+
 section h2 {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   background: linear-gradient(rgba(0, 0, 0, 0) 60%, #ffe866 40%);
   display: inline-block;
   // margin: 0;
@@ -19,7 +21,7 @@ section h2 {
   width: 400px;
 
   h3 {
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
   }
 }
 
@@ -41,7 +43,7 @@ section h2 {
 
 html {
   font-size: 16px;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Arial", sans-serif;
 }
 
 body {
