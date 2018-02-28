@@ -41,7 +41,7 @@ const FiveColors = ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"];
 var el = document.getElementById('mySelect');
 
 if (el) {
-    el.addEventListener("change", changeChart);
+  el.addEventListener("change", changeChart);
 }
 
 var ChartColors = 0;
@@ -123,22 +123,12 @@ function changeChart() {
     }
   }
 
-  myLineChart.destroy();
-
-  var myLineChart = new Chart(document.getElementById("chart"), {
-    type: 'doughnut',
-    data: {
-      labels: ChartLabel,
-      datasets: [{
-        backgroundColor: ChartColors,
-        data: ChartData,
-      }]
-    },
-    options: {
-      title: {
-        display: true,
-        text: ChartTitle
-      }
-    }
+  myLineChart.data.labels = ChartLabel;
+  myLineChart.data.datasets.forEach((dataset) => {
+    dataset.data = ChartData;
+    dataset.backgroundColor = ChartColors;
   });
+  myLineChart.options.title.text = ChartTitle;
+  myLineChart.update();
+
 }
