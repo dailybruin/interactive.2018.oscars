@@ -44,26 +44,10 @@ if (el) {
     el.addEventListener("change", changeChart);
 }
 
-// var optionsPie = {
-//   tooltipTemplate: "<%= value + ' %' %>"
-// }
-
 var ChartColors = 0;
 var ChartData = 0;
 var ChartLabel = 0;
 var ChartTitle = 0;
-
-// options: {
-//   tooltips: {
-//     callbacks: {
-//       label: function(tooltipItem, data) {
-//         var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || 'Other';
-//         var label = data.labels[tooltipItem.index];
-//         return datasetLabel + ': ' + label;
-//       }
-//     }
-//   }
-// }
 
 var myLineChart = new Chart(document.getElementById("chart"), {
   type: 'doughnut',
@@ -77,16 +61,7 @@ var myLineChart = new Chart(document.getElementById("chart"), {
   options: {
     title: {
       display: true,
-      text: "Best Picture",
-    }
-  },
-  tooltips: {
-    mode: 'label',
-    callbacks: {
-      label: function(tooltipItem, data) {
-        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || 'Other';
-        return datasetLabel + "%";
-      }
+      text: "Best Picture (%)",
     }
   }
 });
@@ -97,54 +72,54 @@ function changeChart() {
     ChartLabel = BestPicKey;
     ChartColors = EightColors;
     ChartData = BestPicValue;
-    ChartTitle = "Best Picture";
+    ChartTitle = "Best Picture (%)";
   } else {
     ChartColors = FiveColors;
     if (option == 2) {
       ChartLabel = BestMaleLeadKey;
       ChartData = BestMaleLeadValue;
-      ChartTitle = "Best Actor in a Leading Role";
+      ChartTitle = "Best Actor in a Leading Role (%)";
     } else if (option == 3) {
       ChartLabel = BestFemaleLeadKey;
       ChartData = BestFemaleLeadValue;
-      ChartTitle = "Best Actress in a Leading Role";
+      ChartTitle = "Best Actress in a Leading Role (%)";
     } else if (option == 4) {
       ChartLabel = BestMaleSupportingKey;
       ChartData = BestMaleSupportingValue;
-      ChartTitle = "Best Actor in a Supporting Role";
+      ChartTitle = "Best Actor in a Supporting Role (%)";
     } else if (option == 5) {
       ChartLabel = BestFemaleSupportingKey;
       ChartData = BestFemaleSupportingValue;
-      ChartTitle = "Best Actress in a Supporting Role";
+      ChartTitle = "Best Actress in a Supporting Role (%)";
     } else if (option == 6) {
       ChartLabel = BestAnimationKey;
       ChartData = BestAnimationValue;
-      ChartTitle = "Best Animation Film";
+      ChartTitle = "Best Animation Film (%)";
       ChartColors = ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9"];
     } else if (option == 7) {
       ChartLabel = BestDirectingKey;
       ChartData = BestDirectingValue;
-        ChartTitle = "Best Director";
+        ChartTitle = "Best Director (%)";
     } else if (option == 8) {
       ChartLabel = BestForeignKey;
       ChartData = BestForeignValue;
-      ChartTitle = "Best Foreign Language Film";
+      ChartTitle = "Best Foreign Language Film (%)";
     } else if (option == 9) {
       ChartLabel = BestScoreKey;
       ChartData = BestScoreValue;
-      ChartTitle = "Best Music (Original Score)";
+      ChartTitle = "Best Music (Original Score) (%)";
     } else if (option == 10) {
       ChartLabel = BestSongKey;
       ChartData = BestSongValue;
-      ChartTitle = "Best Music (Original Song)"
+      ChartTitle = "Best Music (Original Song) (%)"
     } else if (option == 11) {
       ChartLabel = BestOriginalKey;
       ChartData = BestOriginalValue;
-      ChartTitle = "Best Writing (Original Screenplay)";
+      ChartTitle = "Best Writing (Original Screenplay) (%)";
     } else if (option == 12) {
       ChartLabel = BestAdaptedKey;
       ChartData = BestAdaptedValue;
-      ChartTitle = "Best Writing (Adapted Screenplay)";
+      ChartTitle = "Best Writing (Adapted Screenplay) (%)";
     }
   }
 
