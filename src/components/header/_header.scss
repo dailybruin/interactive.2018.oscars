@@ -1,23 +1,22 @@
 #cover-photo {
-  background-color: gold;
+  background-image: url('../img/gradient.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   background-position: 50% 0;
-
   font-family: "Karla", sans-serif;
-
-  display: grid;
-  justify-items: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-
+  padding: 2rem;
   h1 {
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
+    font-size: 2.5rem;
   }
-
   a {
     text-decoration: none;
     color: inherit;
+    font-size: 1.5rem;
   }
 }
 
