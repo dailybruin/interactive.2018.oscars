@@ -33,6 +33,7 @@ function createNewDoughnutChart(category) {
       ],
     },
     options: {
+      maintainAspectRatio: false,
       title: {
         display: true,
         text: category.title,
@@ -46,7 +47,7 @@ function createNewDoughnutChart(category) {
             const dataset = data.datasets[tooltipItem.datasetIndex];
             // calculate the total of this data set
             const total = dataset.data.reduce((previousValue, currentValue, currentIndex, array) =>
-                previousValue + currentValue,);
+              previousValue + currentValue, );
             // get the current items value
             const currentValue = dataset.data[tooltipItem.index];
             // calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
