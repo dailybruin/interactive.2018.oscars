@@ -1,23 +1,26 @@
-#cover-photo {
-  background-color: gold;
+.cover-photo {
+  background-image: url(../img/background-gradient.svg);
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: 50% 0;
-
-  font-family: "Karla", sans-serif;
-
-  display: grid;
-  justify-items: center;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0rem 2rem 0rem 2rem;
   align-items: center;
-
   h1 {
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
+    font-size: 4rem;
   }
-
   a {
     text-decoration: none;
     color: inherit;
+    font-size: 1.5rem;
+  }
+  #oscar {
+    height: 100%;
   }
 }
 
