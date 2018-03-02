@@ -1,0 +1,19 @@
+articleheader {
+  background-color: #FFE866;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+ img.slider {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.carousel{
+  width: 100%;
+  height: 50vh;
+  margin-top: 2rem;
+}

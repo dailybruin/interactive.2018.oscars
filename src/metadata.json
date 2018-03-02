@@ -1,48 +1,49 @@
 {
-  "title": "Daily Bruin Flatpage Generator",
-  "description": "It's how DB makes sites so quickly",
-  "base_url": "http://localhost:3000",
-  "sections": [
-    {
+  "developers": ["Nathan Smith", "Krystal Xu", "Michael Zhang"],
+  "github_link": "#",
+  "sections": [{
       "title": "Features",
       "id": "features",
-      "articles": [
-        {
-          "headline": "a&e.sketchtoscreen",
-          "text":
-            "Oscar nominated costume designers discuss their work on films like “Beauty And The Beast” and “The Shape of Water” at UCLA’s annual Sketch to Screen panel. Led by professor Deborah Landis, the chair of costume design, the conversation will explore the inspirations and creative processes behind some of the Academies top picks among on-screen costumes of 2017.",
-          "image": "./img/ae.sketchtoscreen.jpg",
-          "image_alt": "",
-          "authors": ["Kristin Snyder"]
+      "articles": [{
+          "headline": "Sketch to Screen: Oscar-nominated designers to talk value of costumes at upcoming panel",
+          "text": "Oscar nominated costume designers discuss their work on films like “Beauty And The Beast” and “The Shape of Water” at UCLA’s annual Sketch to Screen panel. Led by professor Deborah Landis, the chair of costume design, the conversation will explore the inspirations and creative processes behind some of the Academies top picks among on-screen costumes of 2017.",
+          "image": "3.2.a&e.sketchtoscreen.illo.CS.jpg",
+          "image_alt": "Costume designer Luis Sequeira was nominated for his work on “The Shape of Water.”",
+          "authors": [
+            "Kristin Snyder"
+          ]
         },
         {
-          "headline": "a&e.reedvandyk",
-          "text":
-            "UCLA alumnus Reed Van Dyk’s film “DeKalb Elementary” was nominated for Best Short Film (Live Action) and reenacts the August 2013 school shooting that took place in Georgia.",
-          "image": "./img/ae.reedvandyk.featurehead.jpg",
-          "image_alt": "",
-          "authors": ["Anushka Jain"]
+          "headline": "UCLA alum's short film about prevented school shooting nominated for Oscar",
+          "text": "UCLA alumnus Reed Van Dyk’s film “DeKalb Elementary” was nominated for Best Short Film (Live Action) and reenacts the August 2013 school shooting that took place in Georgia.",
+          "image": "web.ae.reedvandyk.featurehead.SH.jpg",
+          "image_alt": "UCLA alumnus Reed Van Dyk earned an Oscar nomination for his film “DeKalb Elementary.” The film is based on the true events that took place when a gunman entered a Georgia school in 2013.",
+          "authors": [
+            "Anushka Jain"
+          ]
         }
       ]
     },
     {
       "title": "Second Takes",
       "id": "second-takes",
-      "articles": [
-        {
-          "headline": "a&e.newcategory.secondtake",
-          "text": "",
-          "image": "./img/ae.newcategory.secondtake.jpg",
+      "articles": [{
+          "headline": "Second Take: Oscars should reward diversity, innovation in film with new category",
+          "text": "“Wonder Woman” made history as the first superhero movie to headline a woman, but the Academy didn’t nominate it for a single award. As movies that are not traditionally Oscar-worthy continue to make revolutionary strides, a new category should be implemented to honor their achievements.",
+          "image": "WW-11802rv2.jpg",
           "image_alt": "",
-          "authors": ["Christi Carras"]
+          "authors": [
+            "Christi Carras"
+          ]
         },
         {
-          "headline": "a&e.oscarsnubs.secondtake",
-          "text":
-            "From “Mudbound” to “First They Killed My Father,” this year’s Oscar discussion and nomination slate had some glaring omissions. Daily Bruin reporter Olivia Mazzucato discusses some of the missing nominees for Best Picture, Best Director and other categories.",
-          "image": "./img/ae.oscarsnubs.secondtake.jpg",
+          "headline": "Second Take: Academy Awards snubs, overlooks fan-favorite films",
+          "text": "From “Mudbound” to “First They Killed My Father,” this year’s Oscar discussion and nomination slate had some glaring omissions. Daily Bruin reporter Olivia Mazzucato discusses some of the missing nominees for Best Picture, Best Director and other categories.",
+          "image": "2.3.a&e.oscarsnubs.AS.jpg",
           "image_alt": "",
-          "authors": ["Olivia Mazzucato"]
+          "authors": [
+            "Olivia Mazzucato"
+          ]
         }
       ]
     }

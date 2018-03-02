@@ -1,0 +1,13 @@
+#article-footer {
+    width: auto;
+    margin: 2rem;
+    text-align: center;
+    line-height: 1;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    border: 0px solid #FFE866;
+}
+
+#article-footer:hover{
+    background-color: #FFE866;
+    border: 5px solid #FFE866;
+}
