@@ -47,7 +47,7 @@ function createNewDoughnutChart(category) {
             const dataset = data.datasets[tooltipItem.datasetIndex];
             // calculate the total of this data set
             const total = dataset.data.reduce((previousValue, currentValue, currentIndex, array) =>
-              previousValue + currentValue, );
+                previousValue + currentValue,);
             // get the current items value
             const currentValue = dataset.data[tooltipItem.index];
             // calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
@@ -63,6 +63,9 @@ function createNewDoughnutChart(category) {
 
 let doughnutChart = createNewDoughnutChart(data.bestPicture);
 const select = document.getElementById('mySelect');
+if (select) {
+  select.addEventListener('change', changeChart);
+}
 
 function changeChart() {
   let category = data.bestPicture;
@@ -109,8 +112,4 @@ function changeChart() {
 
   doughnutChart.destroy();
   doughnutChart = createNewDoughnutChart(category);
-}
-
-if (select) {
-  select.addEventListener('change', changeChart);
 }
