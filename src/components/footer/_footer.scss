@@ -6,11 +6,9 @@ footer {
   align-items: center;
   font-size: 0.7rem;
   padding: 0.3rem;
-
   a {
     text-decoration: none;
     font-weight: bold;
-
     &:hover {
       color: grey;
     }
@@ -33,7 +31,6 @@ footer {
 
 .footer__db-logo {
   justify-self: end;
-
   img {
     height: 3rem;
   }

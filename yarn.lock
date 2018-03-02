@@ -1660,6 +1660,10 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
+desandro-matches-selector@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz#717beed4dc13e7d8f3762f707a6d58a6774218e1"
+
 destroy@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
@@ -2037,6 +2041,10 @@ etag@^1.8.1, etag@~1.8.0:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
 
+ev-emitter@^1.0.1, ev-emitter@^1.0.2:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
+
 event-emitter@^0.3.5, event-emitter@~0.3.5:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/event-emitter/-/event-emitter-0.3.5.tgz#df8c69eef1647923c7157b9ce83840610b02cc39"
@@ -2265,6 +2273,12 @@ first-chunk-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/first-chunk-stream/-/first-chunk-stream-1.0.0.tgz#59bfb50cd905f60d7c394cd3d9acaab4e6ad934e"
 
+fizzy-ui-utils@^2.0.0:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz#7df45dcc4eb374a08b65d39bb9a4beedf7330505"
+  dependencies:
+    desandro-matches-selector "^2.0.0"
+
 flagged-respawn@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-1.0.0.tgz#4e79ae9b2eb38bf86b3bb56bf3e0a56aa5fcabd7"
@@ -2277,6 +2291,17 @@ flat-cache@^1.2.1:
     del "^2.0.2"
     graceful-fs "^4.1.2"
     write "^0.2.1"
+
+flickity@^2.0.11:
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/flickity/-/flickity-2.0.11.tgz#cc31d6d3481972a4da3d8ae58ffa0f9c4c8cc0d0"
+  dependencies:
+    desandro-matches-selector "^2.0.0"
+    ev-emitter "^1.0.2"
+    fizzy-ui-utils "^2.0.0"
+    get-size "^2.0.0"
+    tap-listener "^2.0.0"
+    unidragger "^2.2.3"
 
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
@@ -2410,6 +2435,10 @@ generate-object-property@^1.1.0:
 get-caller-file@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
+
+get-size@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.2.tgz#555ea98ab8732e0c021e9e23e2219adcbe398e98"
 
 get-stdin@^4.0.1:
   version "4.0.1"
@@ -5435,6 +5464,12 @@ table@^4.0.1:
     slice-ansi "1.0.0"
     string-width "^2.1.1"
 
+tap-listener@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tap-listener/-/tap-listener-2.0.0.tgz#d2e11d0d8e7c92b26a56ae4f35538a248b44ad63"
+  dependencies:
+    unipointer "^2.1.0"
+
 tapable@^0.2.7:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.8.tgz#99372a5c999bf2df160afc0d74bed4f47948cd22"
@@ -5643,6 +5678,12 @@ unc-path-regex@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/unc-path-regex/-/unc-path-regex-0.1.2.tgz#e73dd3d7b0d7c5ed86fbac6b0ae7d8c6a69d50fa"
 
+unidragger@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/unidragger/-/unidragger-2.2.3.tgz#a618801b9b629e1045e3d3793713e7add0a1e16b"
+  dependencies:
+    unipointer "^2.2.0"
+
 union-value@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/union-value/-/union-value-1.0.0.tgz#5c71c34cb5bad5dcebe3ea0cd08207ba5aa1aea4"
@@ -5651,6 +5692,12 @@ union-value@^1.0.0:
     get-value "^2.0.6"
     is-extendable "^0.1.1"
     set-value "^0.4.3"
+
+unipointer@^2.1.0, unipointer@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/unipointer/-/unipointer-2.2.1.tgz#05f9adaac92c0e6e6ed41ce85adab26166b03ee6"
+  dependencies:
+    ev-emitter "^1.0.1"
 
 unique-stream@^1.0.0:
   version "1.0.0"

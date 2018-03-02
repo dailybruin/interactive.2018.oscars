@@ -51,6 +51,17 @@ gulp.task('scripts', () => {
       })
     )
     .pipe(gulp.dest('dev/'));
+  gulp
+    .src('./src/article.js')
+    .pipe(
+      webpack({
+        devtool: 'source-map',
+        output: {
+          filename: 'article.js',
+        },
+      })
+    )
+    .pipe(gulp.dest('dev/'));
 });
 
 gulp.task('html', () =>
