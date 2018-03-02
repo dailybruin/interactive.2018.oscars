@@ -1,0 +1,22 @@
+<article class="card">
+  <a href="{{ article.link }}">
+    <figure>
+      <img class="card__thumbnail" src="{{ article.image }}" alt="{{ article.image_alt }}">
+    </figure>
+    <div class="card__text">
+      <h3 class="card__title">{{ article.headline }}</h3>
+      <div class="card__byline">
+        By
+        {% for author in article.authors %}
+          <span class="card__byline__author">{{ author }}</span>
+          {%- if loop.revindex == 2 %}
+            and
+          {% elif loop.revindex != 1 -%}
+            ,
+          {% endif %}
+        {% endfor %}
+      </div>
+      <p>{{ article.text }}</p>
+    </div>
+  </a>
+</article>

@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "emmet.includeLanguages": {
+    "nunjucks": "html"
+  },
+  // Prettier
+  "prettier.proseWrap": "always",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  // ESLint
+  "eslint.packageManager": "yarn",
+  "eslint.autoFixOnSave": true
+}

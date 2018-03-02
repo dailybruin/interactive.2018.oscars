@@ -64,3 +64,10 @@ typings/
 /build
 /prod
 /dev
+
+# others
+package-lock.json
+.DS_Store
+/src/.DS_Store
+/src/components/.DS_Store
+/src/components/predictions/.DS_Store

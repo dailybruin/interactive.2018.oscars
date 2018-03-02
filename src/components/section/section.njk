@@ -3,16 +3,7 @@
     <h2>{{ section.title }}</h2>
     <div class="card-container">
       {% for article in section.articles %}
-        <article class="card">
-          <a href="{{ article.link }}">
-            <figure>
-              <img class="card__thumbnail" src="http://placekitten.com/700/287" alt="{{ article.image_alt }}">
-            </figure>
-            <h3 class="card__title">{{ article.headline }}</h3>
-            <span>{{ article.authors }}</span>
-            <p>{{ article.subhead }}</p>
-          </a>
-        </article>
+        {% include "./card/card.njk" %}
       {% endfor %}
     </div>
   </section>

@@ -1,25 +1,22 @@
+@import "./card/_card";
+
 section h2 {
-  font-family: 'Josefin Sans';
-  background: linear-gradient(rgba(0, 0, 0, 0) 60%, #ffe866 40%);
+  font-family: "Josefin Sans";
+  background: linear-gradient(transparent 70%, #ffe866 30%);
   display: inline-block;
-  // margin: 0;
-  // padding: 0;
-  width: auto;
-  height: 1.4rem;
+  font-size: 3rem;
+  height: 2.6rem;
 }
 
 .grid {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  // grid-gap: 2rem;
 }
 
 .article-card {
-  width: 400px;
-
   h3 {
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
   }
 }
 
@@ -30,18 +27,8 @@ section h2 {
   grid-gap: 1rem;
 }
 
-.card {
-}
-
 .container {
   margin: 0 4rem;
-}
-
-/* Simple Card styles for prettying */
-
-html {
-  font-size: 16px;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 body {
@@ -62,18 +49,7 @@ body {
   padding: 0.5rem;
   line-height: 1.6em;
 }
-.button {
-  display: block;
-  background-color: tomato;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s ease-out;
-  &:hover {
-    background-color: darken(tomato, 10%);
-  }
-}
+
 img {
   max-width: 100%;
 }

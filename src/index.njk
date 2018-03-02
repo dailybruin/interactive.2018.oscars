@@ -5,25 +5,14 @@
 
 <div class="container">
   {% include "./components/section/section.njk" %}
-
-  {# <section id="predictions">
-    <h2>And the Winner Is...</h2>
-    <p>
-      90 Bruin staffers from X section cast their predictions for this year's Academy Award winners.
-    </p>
-    <p>
-      Explore their responses below.
-    </p>
-    <select>
-      <option value="1">Best Picture</option>
-      <option value="2">Best Actor in a Leading Role</option>
-      <option value="3">Best Actress in a Leading Role</option>
-      <option value="4">Best Actor in a Supporting Role</option>
-      <option value="5">Best Actress in a Supporting Role</option>
-    </select>
-  </section> #}
-
+  {% include "./components/predictions/predictions.njk" %}
 </div>
 
+
+{% include "./components/scripts.njk" %}
+
 {% include "./components/footer/footer.njk" %}
+
 {% endblock %}
+
+
