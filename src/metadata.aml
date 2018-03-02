@@ -3,46 +3,43 @@ description: It's how DB makes sites so quickly
 base_url: http://localhost:3000
 
 
-[sections]
-title: Features
-id: features
-[.articles]
-headline: article headline
-text: Oscar nominated costume designers discuss their work on films like “Beauty And The Beast” and “The Shape of Water” at UCLA’s annual Sketch to Screen panel. Led by professor Deborah Landis, the chair of costume design, the conversation will explore the inspirations and creative processes behind some of the Academies top picks among on-screen costumes of 2017.
-image: Illustration that was emailed
-image_alt: Costume designer Luis Sequeira was nominated for his work on “The Shape of Water.”
+[features]
+  headline: Article Goes Here
+  image: http://via.placeholder.com/400x250
+  subhead: Subheading thing
+  [.authors]
+  * Nathan Smith
+  []
+[]
+
+[secondtakes]
+headline: Article Goes Here
+subhead: Subheading thing
 [.authors]
-* Kristin Snyder
-
+* Nathan Smith
 []
 
-headline: article headline
-text: UCLA alumnus Reed Van Dyk’s film “DeKalb Elementary” was nominated for Best Short Film (Live Action) and reenacts the August 2013 school shooting that took place in Georgia.
-image: a&e.reedvandyk (There should be two photos – one of which lends itself well to a feature head. Can the feature head be “Newly Graduated and Oscar Nominated”
-image_alt: UCLA alumnus Reed Van Dyk earned an Oscar nomination for his film “DeKalb Elementary.” The film is based on the true events that took place when a gunman entered a Georgia school in 2013.
+headline: Article Goes Here
+subhead: Subheading thing
 [.authors]
-* Anushka Jain
+Nathan Smith
 []
 
-[]
-
-title: Second Takes
-id: second-takes
-[.articles]
-headline: article headline
-text: “Wonder Woman” made history as the first superhero movie to headline a woman, but the Academy didn’t nominate it for a single award. As movies that are not traditionally Oscar-worthy continue to make revolutionary strides, a new category should be implemented to honor their achievements.
-image: a&e.newcategory.secondtake
-image_alt:
+headline: Article Goes Here
+subhead: Subheading thing
 [.authors]
-* Christi Carras
+Nathan Smith
 []
 
-headline: article headline
-text: From “Mudbound” to “First They Killed My Father,” this year’s Oscar discussion and nomination slate had some glaring omissions. Daily Bruin reporter Olivia Mazzucato discusses some of the missing nominees for Best Picture, Best Director and other categories.
-image: (illo that was emailed)
-image_alt:
+headline: Article Goes Here
+subhead: Subheading thing
 [.authors]
-* Olivia Mazzucato
+Nathan Smith
 []
+
+headline: Article Goes Here
+subhead: Subheading thing
+[.authors]
+Nathan Smith
 []
 []

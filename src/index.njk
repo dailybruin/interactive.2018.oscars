@@ -3,11 +3,7 @@
 {% block content %}
 {% include "./components/header/header.njk" %}
 
-<div class="container">
-  {% include "./components/section/section.njk" %}
-  {% include "./components/predictions/predictions.njk" %}
-</div>
-
+{% include "./components/predictions/predictions.njk" %}
 
 {% include "./scripts/index-scripts.njk" %}
 
